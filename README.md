@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Project to hold all the homeworks, assigments, programs, exercises and everything related with the my graduation.
+Project to hold all the homeworks, assigments, programs or everything built in my course, Computer Engineer, at UFPa.
 
 ## Installation and using
 

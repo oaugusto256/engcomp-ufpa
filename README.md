@@ -1,4 +1,4 @@
-# engcomp-ufpa
+# <img src="https://github.com/tavioalves/engcomp-ufpa/blob/master/engcomp.jpg" width="40px"> engcomp-ufpa
 
 ## What is it?
 

@@ -7,7 +7,7 @@ Ldata=10000; %comprimento de dados na simulação;Deve ser divisível por 8
 Lc=31;% fator de espelhamento versus taxa de dados
 % Número de usuários = 4;
 % Geração de símbolos de modulação QPSK
-data_sym=2round(rand(Ldata,4))-1+j*(2*round(rand(Ldata,4))-1);
+data_sym=2*round(rand(Ldata,4))-1+j*(2*round(rand(Ldata,4))-1);
 
 % Seleciona 4 códigos de espelhamento (Código Gold de comprimento 11)
 gold31code;
@@ -31,7 +31,7 @@ BER3=[];
 BER4=[];
 BER_az=[];
 
-for 1=1:12,
+for i=1:12,
     Eb2N(i)=(i-1);                          % (Eb/N em dB)
     Vat_n=Lc/(2*Eb2N_num);
     signois=sqrt(Var_n);

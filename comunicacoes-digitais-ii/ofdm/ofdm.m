@@ -21,6 +21,7 @@ s_pref = [s_ifft(N-1); s_ifft(N); s_ifft]; % adicionando prefixo ciclico.
 
 %% Passando pelo canal
 s_conv = conv(s_pref,h);
+
 % Falta adicionar AWGN
 
 %% Recepcao

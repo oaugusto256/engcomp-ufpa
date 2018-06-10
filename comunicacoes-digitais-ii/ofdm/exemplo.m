@@ -7,7 +7,7 @@ pkg load communications % necessario caso Octave
 
 N = 8; %Tamanho simbolo OFDM
 L = 2; %Tamanho prefixo ciclico
-M = 16; %Ordem da modulacao
+M = 16; % Ordem da modulacao
 h = [1 -0.5 0.3]'; %resposta ao impulso
 H = fft([h; zeros(N-(L+1),1)]); % funcao de transferencia
 

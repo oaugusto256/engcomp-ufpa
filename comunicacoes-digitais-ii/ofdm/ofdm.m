@@ -2,6 +2,7 @@ clear all
 close all
 
 clc
+
 nbits = 208000;
 modlevel = 2 ;
 nbitpersym  = 52;   % Numero de bits por simbolo QAM OFDM

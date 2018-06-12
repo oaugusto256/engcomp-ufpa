@@ -19,7 +19,7 @@ for n = 1:length(EbNoVec)
         
     % QAM modulate using 'Gray' symbol mapping
     txSig = qammod(dataSym,M);
-       
+        
     % Pass through AWGN channel
     rxSig = awgn(txSig,snrdB,'measured');
         
@@ -46,6 +46,6 @@ hold on
 semilogy(EbNoVec,berTheory)
 grid
 
-legend('BER Estimada','BER Teórica')
+legend('BER Estimada','BER Teorica')
 xlabel('SNR (dB)')
-ylabel('Bit Error Rate')
+ylabel('BER')

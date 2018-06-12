@@ -9,7 +9,7 @@ H = fft([h; zeros(N-(L+1),1)]); % funcao de transferencia
 
 %% Simbolos de entrada
 %x = randint(8,1,M); %Gerando 8 numeros de 0 a M-1
-x = imread('tiger.jpg');
+x = imread('example-image.jpg');
 
 [A,B,C] = size(x);
 

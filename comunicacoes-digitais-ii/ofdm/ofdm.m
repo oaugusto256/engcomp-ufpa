@@ -3,13 +3,11 @@ close all
 
 clc
 
-nbits = 208000;
 modlevel = 2 ;
 nbitpersym  = 52;   % Numero de bits por simbolo QAM OFDM
 nsym        = 10^4; % Numero de simbolos
 len_fft     = 64;   % Tamanho da FFT
-sub_car     = 52;   % Numero de subcaries
-EbNo        = 0:2:15;
+EbNo        = 0:2:20;
 
 EsNo= EbNo+10*log10(52/64)+ 10*log10(64/80) +10*log10(4);
 snr= EsNo - 10*log10((64/80));
@@ -35,7 +33,6 @@ cylic_add_data = [IFFT_data(:,[49:64]) IFFT_data].';  % Adição do prefixo cicl
 ser_data = reshape(cylic_add_data,80*nsym,1);         % Conversão paralelo serial
 
 % Passando pelo canal
-
 no_of_error=[];
 ratio=[];
 

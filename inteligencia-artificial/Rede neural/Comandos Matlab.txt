@@ -1,0 +1,17 @@
+﻿Rede Neural criada a partir do teste: http://super.abril.com.br/testes/voce-sabe-tudo-sobre-cerveja/
+
+/* Criação da rede com parametros maximos e minimos (Entradas) através do conjunto de treinamento X */
+net = newff ([min(E')' max(E')'], [50,50,4], {'tansig','tansig','tansig'},'traingd');
+
+/* Inserir dos parametros de erro minimo e epocas utilizadas na rede */
+net.trainParam.goal = 0.001;
+net.trainParam.epochs = 10000;
+net.trainParam.lr = 0.01;
+net.trainParam.show = 100;
+net = init(net);
+
+/* Treinamento da rede com o conjunto de treinamento e as saidas desejadas*/
+net = train(net, E,S);
+
+/* Testando a rede */
+sim (net, [Conjunto de teste]);
